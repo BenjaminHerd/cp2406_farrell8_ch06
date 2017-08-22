@@ -5,17 +5,22 @@ public class FixDebugSix2
 {
    public static void main(String args[])
    {
+       //variable declaration
       char letter;
       int a;
       final int MIN = 65;
       final int MAX = 122;
       final int STOPLINE1 = 85;
       final int STOPLINE2 = 122;
+
+      //For loop [a<= MAX; should always follow a++, otherwise: a>= MAX; a--) and variable value must be changed to decrement
       for(a = MIN; a <= MAX; a++){
 
 
         letter = (char)a;
         System.out.print("  " + letter);
+
+        //At defined points, print a line
         if((a == STOPLINE1) || (a == STOPLINE2))
             System.out.println();
       }
